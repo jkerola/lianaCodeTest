@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import { ParallaxBanner } from 'react-scroll-parallax'
+import Navigationbar from './components/Navigationbar'
+import Languagebar from './components/Languagebar'
+import Jumbo from './components/Jumbo'
+import Cards from './components/Cards'
+import Statistics from './components/Statistics'
+import Newsletter from './components/Newsletter'
+import Footer from './components/Footer'
+import './App.css'
 
-function App() {
+// i18next for translation?
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container fluid className='App-container'>
+      <Languagebar />
+      <Navigationbar />
+      <ParallaxBanner
+        expanded
+        layers={[{ image: 'assets/jumbotron.JPEG', amount: 0.3 }]}
+      >
+        <Jumbo />
+      </ParallaxBanner>
+      <Container >
+        <Cards />
+        <Statistics />
+        <Newsletter />
+        <Footer />
+      </Container>
+    </Container>
+  )
 }
 
-export default App;
+export default App

@@ -1,38 +1,111 @@
-.App {
+.App-container {
+  padding: 0;
+}
+.Container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Cards {
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 150px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.Cards-img {
+  position: relative;
+  justify-self: center;
+  overflow-x: hidden;
+  object-fit: cover;
+  border-radius: 5px;
 }
-
+.Cards-img-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.Cards-text {
+  margin-top: 2rem;
+}
+.Language-bar {
+  background-color: green;
+  justify-content:flex-end;
+  padding-right: 1rem;
+  width: 100%;
+}
+.Form-button {
+  background-color: green;
+}
+.Search-bar-container {
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* Animated numbers */
+@property --clients {
+  syntax: "<integer>";
+  initial-value: 3000;
+  inherits: false;
+}
+@property --employees {
+  syntax: "<integer>";
+  initial-value: 180;
+  inherits: false;
+}
+@property --users {
+  syntax: "<integer>";
+  initial-value: 10000;
+  inherits: false;
+}
+
+.Statistics-clients {
+  animation: countClients 2s 1 ease-in-out;
+  counter-reset: clients var(--clients);
+}
+.Statistics-clients::after {
+  content: counter(clients);
+}
+.Statistics-employees {
+  animation: countEmployees 1s 1 ease-in-out;
+  counter-reset: employees var(--employees);
+}
+.Statistics-employees::after {
+  content: counter(employees);
+}
+.Statistics-users {
+  animation: countUsers 3s 1 ease-in-out;
+  counter-reset: users var(--users);
+}
+.Statistics-users::after {
+  content: counter(users);
+}
+
+@keyframes countClients {
+  from {
+    --clients: 0;
+  }
+  to {
+    --clients: 3000;
+  }
+}
+@keyframes countEmployees {
+  from {
+    --employees: 0;
+  }
+  to {
+    --employees: 180;
+  }
+}
+@keyframes countUsers {
+  from {
+    --users: 0;
+  }
+  to {
+    --users: 10000;
   }
 }
