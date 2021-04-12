@@ -25,8 +25,9 @@ const Navigationbar = () => {
           <Nav.Link href="#">Products</Nav.Link>
           <Nav.Link href="#">Contact us</Nav.Link>
         </Nav>
-        <Container className='Search-bar-container'>
-          <Form className='Search-bar' inline onSubmit={handleSubmit}>
+        <Container className='col-md-4' />
+        <Container className='col-md-4'>
+          <Form className='' onSubmit={handleSubmit}>
             <InputGroup>
               <FormControl onChange={(e) => setSearch(e.target.value)}
                 type='text' placeholder='Search' required />
