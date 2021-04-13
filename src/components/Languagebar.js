@@ -3,7 +3,7 @@ import { Navbar, Nav, Form, FormControl } from 'react-bootstrap'
 
 const Languagebar = () => {
   return (
-    <Navbar fluid className='Language-bar'>
+    <Navbar className='Language-bar'>
         <Nav className='mr-auto'>
           <Nav.Link href='#'>News</Nav.Link>
           <Nav.Link href='#'>Intranet</Nav.Link>

@@ -84,6 +84,20 @@
   text-align: center;
   padding: 2rem 3rem 2rem 3rem;
 }
+.Newsletter-success {
+  margin-bottom: 0.5rem;
+  border: 1px solid green;
+  border-radius: 3px;
+  color: white;
+  background-color: green;
+}
+.Newsletter-error {
+  margin-bottom: 0.5rem;
+  border: 1px solid orangered;
+  border-radius: 3px;
+  color: white;
+  background-color: orangered;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
