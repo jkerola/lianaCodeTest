@@ -1,4 +1,5 @@
 import { React, useState } from 'react'
+import { Form, FormControl, InputGroup, Button } from 'react-bootstrap'
 import SubmitEmail from '../services/emailservice'
 
 const Newsletter = () => {
@@ -20,18 +21,28 @@ const Newsletter = () => {
     event.target.reset()
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <h3>Subscribe to our newsletter</h3>
-        <p>Follow our story and get the latest promotional news about our products and events.</p>
-        <div style={showOnResponse}>Email address submitted!</div>
-        <input
+    <Form className='Newsletter-div' onSubmit={handleSubmit}>
+      <h3>Subscribe to our newsletter</h3>
+      <p>Follow our story and get the latest promotional news about our products and events.</p>
+      <div style={showOnResponse}>Email address submitted!</div>
+      <InputGroup>
+        <FormControl
           type='email'
           placeholder='Enter your email'
-          required onChange={(e) => setEmail(e.target.value)}></input>
-        <button type='submit'>Subscribe</button>
-      </div>
-    </form>
+          className='Newsletter-input'
+          required onChange={(e) => setEmail(e.target.value)}
+        />
+        <InputGroup.Append>
+          <Button
+            variant='success'
+            className='Form-button'
+            type='submit'
+          >
+            Subscribe
+          </Button>
+        </InputGroup.Append>
+      </InputGroup>
+    </Form>
   )
 }
 

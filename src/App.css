@@ -26,8 +26,31 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.404);
 }
+.Cards-link {
+  text-decoration: none;
+  color:white;
+}
+.Cards-link:hover {
+  color: white;
+}
 .Cards-text {
   margin-top: 2rem;
+}
+.Footer-div {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+.Footer-icon {
+  color: green;
+}
+.Footer-link {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.Footer-link:hover {
+  color:green;
 }
 .Language-bar {
   background-color: green;
@@ -50,6 +73,16 @@
 .Jumbo-button {
   position: relative;
   top:45%;
+}
+.News-div {
+  background-color: rgb(216, 227, 240);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.Newsletter-div {
+  text-align: center;
+  padding: 2rem 3rem 2rem 3rem;
 }
 @keyframes App-logo-spin {
   from {
@@ -84,6 +117,7 @@
 .Statistics-div {
   text-align: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   offset: -1rem;
 }
 .Statistics-icon {

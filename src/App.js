@@ -5,6 +5,7 @@ import Languagebar from './components/Languagebar'
 import Jumbo from './components/Jumbo'
 import Cards from './components/Cards'
 import Statistics from './components/Statistics'
+import News from './components/News'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 import './App.css'
@@ -21,9 +22,12 @@ const App = () => {
       <Container >
         <Cards />
         <Statistics />
-        <Newsletter />
-        <Footer />
       </Container>
+      <News />
+      <Container>
+        <Newsletter />
+      </Container>
+      <Footer />
     </Container>
   )
 }
