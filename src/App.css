@@ -38,6 +38,19 @@
 .Form-button {
   background-color: green;
 }
+.Jumbo-div {  
+  text-align: center;
+}
+.Jumbo-text {
+  position:relative;
+  top: 40%;
+  color:white;
+  font-size: 2rem;
+}
+.Jumbo-button {
+  position: relative;
+  top:45%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Container, Card } from 'react-bootstrap'
-import { ParallaxBanner } from 'react-scroll-parallax'
+import { Container } from 'react-bootstrap'
 import Navigationbar from './components/Navigationbar'
 import Languagebar from './components/Languagebar'
-// import Jumbo from './components/Jumbo'
+import Jumbo from './components/Jumbo'
 import Cards from './components/Cards'
 import Statistics from './components/Statistics'
 import Newsletter from './components/Newsletter'
@@ -18,13 +17,7 @@ const App = () => {
       <Container>
         <Navigationbar />
       </Container>
-      <Card>
-        <ParallaxBanner expanded
-          layers={[{ image: 'assets/jumbotron.JPEG', amount: 0.3 }]} />
-        <Card.ImgOverlay>
-          <Card.Title>AAAAAAAAAAAAA</Card.Title>
-        </Card.ImgOverlay>
-      </Card>
+      <Jumbo />
       <Container >
         <Cards />
         <Statistics />
