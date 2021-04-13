@@ -15,7 +15,7 @@ const Navigationbar = () => {
       <Navbar.Brand href='#home'>
         <img
           src='assets/liana_logo.JPEG'
-          className='d-inline-block align-top'
+          className='d-inline-block align-top Navbar-logo'
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

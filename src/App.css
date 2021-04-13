@@ -4,6 +4,9 @@
 .Container {
   text-align: center;
 }
+.Border {
+  border: 1px solid black;
+}
 .Cards {
   text-align: center;
   align-items: center;
@@ -35,9 +38,6 @@
 .Form-button {
   background-color: green;
 }
-.Search-bar-container {
-  
-}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -62,7 +62,25 @@
   initial-value: 10000;
   inherits: false;
 }
-
+.Statistics-icon-col {
+  text-align: end;
+}
+.Statistics-text-col {
+  text-align: start;
+}
+.Statistics-div {
+  text-align: center;
+  padding-top: 2rem;
+  offset: -1rem;
+}
+.Statistics-icon {
+  margin-top: 1rem;
+  color: green;
+}
+.Statistics-number {
+  font-size: 2rem;
+  color: green;
+}
 .Statistics-clients {
   animation: countClients 2s 1 ease-in-out;
   counter-reset: clients var(--clients);

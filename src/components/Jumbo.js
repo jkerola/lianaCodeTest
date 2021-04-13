@@ -1,11 +1,9 @@
 import React from 'react'
-import { Jumbotron } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
 
 const Jumbo = () => {
   return (
-    <Jumbotron fluid>
-      test
-    </Jumbotron>
+    <div></div>
   )
 }
 

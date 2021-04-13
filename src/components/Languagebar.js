@@ -9,8 +9,8 @@ const Languagebar = () => {
           <Nav.Link href='#'>Intranet</Nav.Link>
           <Form inline>
             <FormControl as='select'>
-              <option>English</option>
-              <option>Suomi</option>
+              <option>in English</option>
+              <option>Suomeksi</option>
             </FormControl>
           </Form>
         </Nav>
