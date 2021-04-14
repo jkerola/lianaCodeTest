@@ -109,14 +109,11 @@
   padding: 2rem 0 4rem 0;
 }
 .References-card {
+  height: 380px;
   max-width: 230px;
+  min-width: 230px;
   text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.References-carddeck {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 2rem;
 }
 .References-card-image {
   align-self: center;
@@ -177,21 +174,21 @@
   color: green;
 }
 .Statistics-clients {
-  animation: countClients 2s 1 ease-in-out;
+  animation: countClients 4s 1 ease-in-out;
   counter-reset: clients var(--clients);
 }
 .Statistics-clients::after {
   content: counter(clients);
 }
 .Statistics-employees {
-  animation: countEmployees 1s 1 ease-in-out;
+  animation: countEmployees 3s 1 ease-in-out;
   counter-reset: employees var(--employees);
 }
 .Statistics-employees::after {
   content: counter(employees);
 }
 .Statistics-users {
-  animation: countUsers 3s 1 ease-in-out;
+  animation: countUsers 5s 1 ease-in-out;
   counter-reset: users var(--users);
 }
 .Statistics-users::after {
