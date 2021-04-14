@@ -27,7 +27,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col>
-            <Container className='text-start'>
+            <Container className='p-0'>
               Sales and Enquiries<br />
               Email: sales@lianatech.com <br />
               Phone: +358 10 387 7053

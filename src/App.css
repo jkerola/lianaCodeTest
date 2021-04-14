@@ -7,6 +7,9 @@
 .Border {
   border: 1px solid black;
 }
+.Divider {
+  border-top: 1px solid lightgray;
+}
 .Cards {
   text-align: center;
   align-items: center;
@@ -52,12 +55,7 @@
 .Footer-link:hover {
   color:green;
 }
-.Language-bar {
-  background-color: green;
-  justify-content:flex-end;
-  padding-right: 1rem;
-  width: 100%;
-}
+
 .Form-button {
   background-color: green;
 }
@@ -74,6 +72,15 @@
   position: relative;
   top:45%;
 }
+.Language-bar {
+  background-color: green;
+  justify-content:flex-end;
+  padding-right: 1rem;
+  width: 100%;
+}
+.Language-bar-div {
+  background-color: green;
+}
 .News-div {
   background-color: rgb(216, 227, 240);
   text-align: center;
@@ -82,7 +89,7 @@
 }
 .Newsletter-div {
   text-align: center;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 4rem 3rem 4rem 3rem;
 }
 .Newsletter-success {
   margin-bottom: 0.5rem;
@@ -97,6 +104,33 @@
   border-radius: 3px;
   color: white;
   background-color: orangered;
+}
+.References-container {
+  padding: 2rem 0 4rem 0;
+}
+.References-card {
+  max-width: 230px;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.References-carddeck {
+  display: flex;
+  justify-content: center;
+}
+.References-card-image {
+  align-self: center;
+  max-width: 200px;
+  height: auto;
+  overflow: hidden;
+}
+.References-card-image-div {
+  height: 140px;
+  text-align: center;
+}
+.References-card-text-div {
+  border-top: 1px solid lightgray;
+  padding-top: 1rem;
 }
 @keyframes App-logo-spin {
   from {

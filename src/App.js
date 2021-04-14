@@ -6,6 +6,7 @@ import Jumbo from './components/Jumbo'
 import Cards from './components/Cards'
 import Statistics from './components/Statistics'
 import News from './components/News'
+import References from './components/References'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 import './App.css'
@@ -24,6 +25,8 @@ const App = () => {
         <Statistics />
       </Container>
       <News />
+      <References />
+      <Container fluid className='Divider'/>
       <Container>
         <Newsletter />
       </Container>

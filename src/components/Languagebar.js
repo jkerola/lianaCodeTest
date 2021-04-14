@@ -1,9 +1,11 @@
 import React from 'react'
-import { Navbar, Nav, Form, FormControl } from 'react-bootstrap'
+import { Container, Navbar, Nav, Form, FormControl } from 'react-bootstrap'
 
 const Languagebar = () => {
   return (
-    <Navbar className='Language-bar'>
+    <Container fluid className='Language-bar-div'>
+      <Container>
+      <Navbar className='Language-bar'>
         <Nav className='mr-auto'>
           <Nav.Link href='#'>News</Nav.Link>
           <Nav.Link href='#'>Intranet</Nav.Link>
@@ -14,7 +16,9 @@ const Languagebar = () => {
             </FormControl>
           </Form>
         </Nav>
-    </Navbar>
+      </Navbar>
+      </Container>
+    </Container>
   )
 }
 
