@@ -1,4 +1,4 @@
-import React from 'react'
+import { React } from 'react'
 import { Container } from 'react-bootstrap'
 import Navigationbar from './components/Navigationbar'
 import Languagebar from './components/Languagebar'
@@ -26,7 +26,7 @@ const App = () => {
       </Container>
       <News />
       <References />
-      <Container fluid className='Divider'/>
+      <Container fluid className='Divider' />
       <Container>
         <Newsletter />
       </Container>

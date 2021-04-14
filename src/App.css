@@ -83,9 +83,31 @@
 }
 .News-div {
   background-color: rgb(216, 227, 240);
-  text-align: center;
+  text-align: start;
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+.News-card {
+  width: 18rem;
+  padding-bottom: 1rem;
+}
+.News-card-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.News-card-date {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color:grey;
+  font-variant: small-caps;
+}
+.News-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+.News-card-link:hover {
+  color:green;
 }
 .Newsletter-div {
   text-align: center;
