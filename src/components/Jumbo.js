@@ -4,9 +4,18 @@ import { ParallaxBanner } from 'react-scroll-parallax'
 
 const Jumbo = () => {
   return (
-    <Card className='Jumbo-div'>
+    <Card border='light' className='Jumbo-div'>
       <ParallaxBanner expanded
-        layers={[{ image: 'assets/jumbotron.JPEG', amount: 0.3 }]} />
+        layers={[{
+          image: 'assets/jumbotron.JPEG',
+          amount: 0.3
+        }]
+        }
+        style={{
+          height: '50vh',
+          width: 'auto'
+        }}
+      />
       <Card.ImgOverlay>
         <Card.Title
           className='Jumbo-text'>

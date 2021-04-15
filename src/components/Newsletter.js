@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { Form, FormControl, InputGroup, Button } from 'react-bootstrap'
+import { Row, Col, Form, FormControl, InputGroup, Button } from 'react-bootstrap'
 import submitEmail from '../services/emailservice'
 
 const Newsletter = () => {
@@ -34,28 +34,32 @@ const Newsletter = () => {
     event.target.reset()
   }
   return (
-    <Form className='Newsletter-div' onSubmit={handleSubmit}>
-      <h3>Subscribe to our newsletter</h3>
-      <p>Follow our story and get the latest promotional news about our products and events.</p>
-      <div className={msgStyle} style={showOnResponse}>{message}</div>
-      <InputGroup>
-        <FormControl
-          type='email'
-          placeholder='Enter your email'
-          className='Newsletter-input'
-          required onChange={(e) => setEmail(e.target.value)}
-        />
-        <InputGroup.Append>
-          <Button
-            variant='success'
-            className='Form-button'
-            type='submit'
-          >
-            Subscribe
+    <Row className='justify-content-center'>
+      <Col md='auto'>
+        <Form className='Newsletter-div' onSubmit={handleSubmit}>
+          <h3>Subscribe to our newsletter</h3>
+          <p>Follow our story and get the latest promotional news about our products and events.</p>
+          <div className={msgStyle} style={showOnResponse}>{message}</div>
+          <InputGroup>
+            <FormControl
+              type='email'
+              placeholder='Enter your email'
+              className='Newsletter-input'
+              required onChange={(e) => setEmail(e.target.value)}
+            />
+            <InputGroup.Append>
+              <Button
+                variant='success'
+                className='Form-button'
+                type='submit'
+              >
+                Subscribe
           </Button>
-        </InputGroup.Append>
-      </InputGroup>
-    </Form>
+            </InputGroup.Append>
+          </InputGroup>
+        </Form>
+      </Col>
+    </Row>
   )
 }
 

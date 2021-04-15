@@ -1,42 +1,22 @@
 import React from 'react'
-import { Card, CardGroup, Image } from 'react-bootstrap'
+import { CardGroup } from 'react-bootstrap'
+import BannerCard from './BannerCard'
 
 const Cards = () => {
   return (
     <CardGroup className='mt-4 Cards-container'>
-      <Card border='light' className='text-white Cards'>
-        <Card.Img className='Cards-img img-responsive'
-          as={Image}
-          src='../assets/left.JPEG'
-        />
-        <Card.ImgOverlay className='Cards-img-overlay'>
-          <a href='#Company' className='Cards-link stretched-link'>
-            <Card.Title className='Cards-text'>Company</Card.Title>
-          </a>
-        </Card.ImgOverlay>
-      </Card >
-      <Card border='light' className='text-white Cards'>
-        <Card.Img className='Cards-img img-responsive'
-          as={Image}
-          src='../assets/middle.JPEG'
-        />
-        <Card.ImgOverlay className='Cards-img-overlay'>
-          <a href='#Products' className='Cards-link stretched-link'>
-            <Card.Title className='Cards-text'>Products</Card.Title>
-          </a>
-        </Card.ImgOverlay>
-      </Card >
-      <Card border='light' className='text-white Cards'>
-        <Card.Img className='Cards-img img-responsive'
-          as={Image}
-          src='../assets/right.JPEG'
-        />
-        <Card.ImgOverlay className='Cards-img-overlay'>
-          <a href='#Contact' className='Cards-link stretched-link'>
-            <Card.Title className='Cards-text'>Contact us</Card.Title>
-          </a>
-        </Card.ImgOverlay>
-      </Card >
+      <BannerCard
+        text='Company'
+        img='assets/left.JPEG'
+      />
+      <BannerCard
+        text='Products'
+        img='assets/middle.JPEG'
+      />
+      <BannerCard
+      text='Contact us'
+      img='assets/right.JPEG'
+      />
     </CardGroup>
   )
 }

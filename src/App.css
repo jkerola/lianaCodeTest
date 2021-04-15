@@ -44,13 +44,22 @@
   color: white;
   padding: 2rem;
 }
+.Footer-navbar {
+  background-color: black!important;
+}
+.Footer-contact-text {
+  white-space: nowrap;
+}
 .Footer-icon {
   color: green;
 }
 .Footer-link {
-  color: white;
+  color:white;
   margin-right: 1rem;
   text-decoration: none;
+}
+.Footer-link:active {
+  color:white;
 }
 .Footer-link:hover {
   color:green;
@@ -63,14 +72,12 @@
   text-align: center;
 }
 .Jumbo-text {
-  position:relative;
-  top: 40%;
   color:white;
   font-size: 2rem;
+  margin-top: 10vh;
 }
 .Jumbo-button {
-  position: relative;
-  top:45%;
+  margin-top: 0.75rem;
 }
 .Language-bar {
   background-color: green;
@@ -159,22 +166,7 @@
     transform: rotate(360deg);
   }
 }
-/* Animated numbers */
-@property --clients {
-  syntax: "<integer>";
-  initial-value: 3000;
-  inherits: false;
-}
-@property --employees {
-  syntax: "<integer>";
-  initial-value: 180;
-  inherits: false;
-}
-@property --users {
-  syntax: "<integer>";
-  initial-value: 10000;
-  inherits: false;
-}
+
 .Statistics-icon-col {
   text-align: end;
 }
@@ -188,56 +180,9 @@
   offset: -1rem;
 }
 .Statistics-icon {
-  margin-top: 1rem;
   color: green;
 }
 .Statistics-number {
   font-size: 2rem;
-  color: green;
-}
-.Statistics-clients {
-  animation: countClients 4s 1 ease-in-out;
-  counter-reset: clients var(--clients);
-}
-.Statistics-clients::after {
-  content: counter(clients);
-}
-.Statistics-employees {
-  animation: countEmployees 3s 1 ease-in-out;
-  counter-reset: employees var(--employees);
-}
-.Statistics-employees::after {
-  content: counter(employees);
-}
-.Statistics-users {
-  animation: countUsers 5s 1 ease-in-out;
-  counter-reset: users var(--users);
-}
-.Statistics-users::after {
-  content: counter(users);
-}
-
-@keyframes countClients {
-  from {
-    --clients: 0;
-  }
-  to {
-    --clients: 3000;
-  }
-}
-@keyframes countEmployees {
-  from {
-    --employees: 0;
-  }
-  to {
-    --employees: 180;
-  }
-}
-@keyframes countUsers {
-  from {
-    --users: 0;
-  }
-  to {
-    --users: 10000;
-  }
+  color: black;
 }
