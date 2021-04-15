@@ -10,7 +10,7 @@ Clone the project onto your computer and install required packages with
 
 ```shell
 git clone https://github.com/jkerola/lianaCodeTest.git
-cd liana
+cd lianacodetest
 npm install
 ```
 
