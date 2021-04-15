@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Navbar, Nav, Form, FormControl } from 'react-bootstrap'
 
+// Component: navbar with links and dropdown menu
 const Languagebar = () => {
   return (
     <Container fluid className='Language-bar-div'>

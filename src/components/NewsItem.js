@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import PropTypes from 'react-proptypes'
 
+// component: news article card
 const NewsItem = ({ date, title }) => {
   // Regex for stripping [infographic] etc from titles
   const regex = /(\[.*?])/gm

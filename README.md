@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Liana Technologies codetest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+This responsive HTML page was built with React.js, Bootstrap and icons from Material-ui.
 
-In the project directory, you can run:
+## Get started
 
-### `npm start`
+Clone the project onto your computer and install required packages with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```shell
+git clone https://github.com/jkerola/lianaCodeTest.git
+cd liana
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+then start the development server with
+```shell
+npm start
+```
 
-### `npm test`
+HIGHLY RECOMMENDED to open a separate terminal window and start 
+the development database with
+```shell
+npm run db 
+```
+as without this email subscription and RSS feed fetching will fail.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The HTML should now be viewable at http://localhost:3000.
 
-### `npm run build`
+Email addresses submitted via the page can be viewed at http://localhost:3001/subscribers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Project modeled after image [here.](https://www.dropbox.com/s/guv666t1m2rvj6p/Liana%20Technologies%20-%20Recruitment%20Demo.psd?dl=0)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The page is not a 1:1 recreation, but as close as I could get.
+Images and logos were extracted from the template with Krita and cropped with MSPaint.
+Icons are imported from @materials-ui/icons package, with CSS styling to match.
 
-### `npm run eject`
+Responsiveness was achieved by using components provided by [React-Bootstrap](https://react-bootstrap.github.io/). Functionality was manually tested on multiple machines as well as emulation due to the scope of the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Development database and server uses [JSON-server](https://www.npmjs.com/package/json-server).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Parallax effect was achieved with [react-scroll-parallax](https://www.npmjs.com/package/react-scroll-parallax).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Animated numbers were created with [react-countup](https://www.npmjs.com/package/react-countup) to achieve crossplatform support, as custom CSS animations did not work on my personal phone.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+RSS feed parsing was done with [rss-parser](https://www.npmjs.com/package/rss-parser).
+Due to CORS preventing direct access to [LianaTech.com/blog.rss](https://lianatech.com/resources/blog.rss) a local copy the feed is hosted with JSON-server.

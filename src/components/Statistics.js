@@ -5,6 +5,7 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter'
 import FaceIcon from '@material-ui/icons/Face'
 import PublicIcon from '@material-ui/icons/Public'
 
+// component: collection of statistic components
 const Statistics = () => {
   return (
     <Container>

@@ -10,6 +10,7 @@ const baseURL = 'http://localhost:3001'
 
 const parser = new Parser()
 
+// Parses RSS feed into javascript object from target URL
 const getNews = async () => {
   const response = await parser.parseURL(baseURL)
   return response

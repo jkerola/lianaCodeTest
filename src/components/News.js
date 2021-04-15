@@ -3,15 +3,18 @@ import { Container, CardDeck, Row, Col } from 'react-bootstrap'
 import NewsItem from './NewsItem'
 import getNews from '../services/newsservice'
 
+// component: collection of news article cards from rss feed
 const News = () => {
   // Configure how many articles are displayed in page
   const articles = 4
   const [news, setNews] = useState(null)
+  // fetch articles once on render
   useEffect(() => {
     getNews()
       .then(response => {
         setNews(response.items)
       })
+      // if feed unreachable, display error article
       .catch(() => {
         setNews([{
           pubDate: new Date(),

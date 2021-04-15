@@ -4,6 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import TwitterIcon from '@material-ui/icons/Twitter'
 
+// component: page footer with collapsing navbar
 const Footer = () => {
   const iconSize = { fontSize: 30 }
   const linkColor = { color: 'white' }

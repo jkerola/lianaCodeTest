@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'react-proptypes'
 import { Card, Container, Image } from 'react-bootstrap'
 
+// component: reference card
 const Reference = ({ img, title, body }) => {
   return (
     <Card className='References-card'>

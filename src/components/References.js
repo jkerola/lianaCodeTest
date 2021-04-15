@@ -2,6 +2,7 @@ import React from 'react'
 import { CardDeck, Row, Col, Container } from 'react-bootstrap'
 import Reference from './Reference'
 
+// component: collection of reference cards
 const References = () => {
   return (
     <Container className='References-container'>

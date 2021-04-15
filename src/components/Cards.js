@@ -2,6 +2,7 @@ import React from 'react'
 import { CardGroup } from 'react-bootstrap'
 import BannerCard from './BannerCard'
 
+// component: collection of thumbnail links
 const Cards = () => {
   return (
     <CardGroup className='mt-4 Cards-container'>

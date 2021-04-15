@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 import { ParallaxBanner } from 'react-scroll-parallax'
 
+// component: banner with parallax effect and text
 const Jumbo = () => {
   return (
     <Card border='light' className='Jumbo-div'>

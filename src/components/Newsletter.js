@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import { Row, Col, Form, FormControl, InputGroup, Button } from 'react-bootstrap'
 import submitEmail from '../services/emailservice'
 
+// component: email address subsription form
 const Newsletter = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')

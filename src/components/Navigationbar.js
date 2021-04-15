@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import { Navbar, Nav, Form, FormControl, InputGroup, Button, Container } from 'react-bootstrap'
 
+// component: Navbar with links and search bar
 const Navigationbar = () => {
   const [search, setSearch] = useState('')
   // Search bar form submission handler
@@ -8,7 +9,6 @@ const Navigationbar = () => {
     event.preventDefault()
     event.target.reset()
     console.log(search)
-    // TODO: GOOGLE SEARCH WITH TERMS
   }
   return (
     <Navbar expand='lg'>

@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 import PropTypes from 'react-proptypes'
 import CountUp from 'react-countup'
 
+// component: statistic with animated number
 const Statistic = ({ Icon, text, duration, number }) => {
   const iconSize = { fontSize: 60, color: 'green' }
   return (
